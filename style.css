@@ -1,0 +1,104 @@
+.carousel{
+    position: relative;
+    height:370px;
+    width: 90%;
+    margin: 0 auto ;
+    margin-top: 4%;
+}
+.scoop{
+    float:right;
+}
+.scoop-left{
+    float: left;
+}
+
+.imgofgm{
+    height: 80%;
+    width: 22%;
+    transform: translateY(-45%);
+}
+.carousel__track-container{
+    position: relative;
+    overflow: visible;
+}
+.carousel__track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+.carousel__slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: none;
+}
+.carousel__slide.current-slide{
+    display: flex;
+}
+.carousel__button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+}
+.carousel__button--left{
+    left:-30px;
+}
+.carousel__button--right{
+    right: -30px;
+}
+.carousel__button img{
+    width: 12px;
+}
+.text{
+    width:50%;
+}
+.name--{
+    transform: translateY(-15%);
+}
+.carousel__nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background: rgb(5, 43, 38);
+}
+.carousel__indicator{
+    border: 0;
+    background: rgb(5, 43, 38);
+    margin: 0 12px;
+}
+.carousel__indicator.current-slide.google img{
+    content: url("google.png");
+}
+.carousel__indicator.current-slide.facebook img{
+    content: url("facebook.png");
+}
+.is-hidden{
+    display: none;
+}
+@media only screen and (max-width: 414px){
+    .google-picture img{
+        content: url("john_small.png");
+    }
+    .facebook-picture img{
+        content: url("jane_small.png");
+    }
+    .text{
+        width:100%;
+    }
+    .scoop{
+        float:left;
+    }
+    .imgofgm{
+        transform: translateY(40%);
+    }
+    .name--{
+        margin-left: 1cm;
+        transform: translateY(80%);
+    }
+}
